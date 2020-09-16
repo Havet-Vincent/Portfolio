@@ -1,0 +1,16 @@
+{
+  "name": "Portfolio",
+  "version": "0.1.0",
+  "description": "Site de mon Portfolio en SASS, Flexbox et JavaScript",
+  "main": "index.js",
+  "repository": "git@github.com:Havet-Vincent/Portfolio.git",
+  "author": "HAVET <vhavet@gmail.com>",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css -r --output-style=compressed"
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
