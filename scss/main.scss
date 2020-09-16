@@ -1,7 +1,32 @@
+/* Font Awesome Free Icon */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Font Google */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
+
+// General Style
+
+$web_width: 1100px;
+$light_color: #fdf9ff;
+$dark_color: #302e4d; 
+$transition: all 0.3s ease;
+$about_img: url('../img/about.jpg');
+
+
+
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: 0;
+  text-decoration: none;
 }
 
-body { background-color: #fff; }
+body {
+  line-height: 1.5;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
