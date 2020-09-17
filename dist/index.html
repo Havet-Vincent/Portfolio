@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,264 @@
   <link rel="stylesheet" href="css/styles/pink.css">
   <title>Mon Portfolio</title>
 </head>
+
 <body>
-  
-<!-- Main Container -->
-<main-container>
-  <!-- Aside -->
-  <div class="aside">
-    <!-- Nav -->
-    <div class="aside-inner">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="#">HAVET.V</a>
-      </div>
-      <!-- Logo End -->
-      <!-- NavBar -->
-      <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i>acceuil</a></li>
-        <li><a href="#about"><i class="fa fa-user"></i>à propos</a></li>
-        <li><a href="#skills"><i class="fa fa-list"></i>compétences</a></li>
-        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>portfolio</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i>contact</a></li>
-      </ul>
-      <!-- NavBar End -->
-      <!-- Copyright -->
-      <copyright-text>
-        &copy; 2020 Havet Vincent
-      </copyright-text>
-      <!-- Copyright End -->
-    </div>
-    <!-- Nav End -->
-  </div>
-  <!-- Aside End -->
-<!-- Main Content -->
-<div class="main-content">
-  <!-- Home Section -->
-  <section class="home section active">
-    <div class="container">
-      <div class="intro">
-        <img src="img/about.jpeg" alt="profile" class="shadow-dark">
-        <h1>Vincent Havet</h1>
-        <p>Je suis un Développeur Web</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/vincent-havet"><li class="fa fa-linkedin"></li></a>
-          <a href="https://www.facebook.com/vincent.havet.3/"><li class="fa fa-facebook"></li></a>
-          <a href="https://twitter.com/VincentHavet"><li class="fa fa-twitter"></li></a>
+
+  <!-- Main Container -->
+  <main-container>
+    <!-- Aside -->
+    <div class="aside">
+      <!-- Nav -->
+      <div class="aside-inner">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">HAVET.V</a>
         </div>
+        <!-- Logo End -->
+        <!-- NavBar -->
+        <ul class="nav">
+          <li><a href="#home" class="active"><i class="fa fa-home"></i>acceuil</a></li>
+          <li><a href="#about"><i class="fa fa-user"></i>à propos</a></li>
+          <li><a href="#skills"><i class="fa fa-list"></i>compétences</a></li>
+          <li><a href="#portfolio"><i class="fa fa-briefcase"></i>portfolio</a></li>
+          <li><a href="#contact"><i class="fa fa-comments"></i>contact</a></li>
+        </ul>
+        <!-- NavBar End -->
+        <!-- Copyright -->
+        <copyright-text>
+          &copy; 2020 Havet Vincent
+        </copyright-text>
+        <!-- Copyright End -->
       </div>
+      <!-- Nav End -->
     </div>
-  </section>
-  <!-- Home Section End -->
-</div>
-<!-- Main Content End -->
+    <!-- Aside End -->
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Home Section -->
+      <section class="home section active hidden">
+        <div class="container">
+          <div class="intro">
+            <img src="img/about.jpeg" alt="profile" class="shadow-dark">
+            <h1>Vincent Havet</h1>
+            <p>Je suis un Développeur Web</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/vincent-havet">
+                <li class="fa fa-linkedin"></li>
+              </a>
+              <a href="https://www.facebook.com/vincent.havet.3/">
+                <li class="fa fa-facebook"></li>
+              </a>
+              <a href="https://twitter.com/VincentHavet">
+                <li class="fa fa-twitter"></li>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title plr">
+              <h2>à propos de moi</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="bout-content plr">
+              <div class="about-text plr">
+                <h3>Je suis Vincent Havet et <span>développeur web et web mobile</span></h3>
+                <p>Je suis un développeur web junior reconverti depuis Mai 2020 suite à ma formation dans l'excellente
+                  école O'clock en
+                  téléprésentiel. Nous avons eu un socle de 700 heures sur HTML, CSS, PHP, JAVASCRIPT. Tous les jours
+                  nous avions
+                  un challenge à effectuer soit en solo ou en collaboration (pair programming, slack, trello). Ensuite
+                  j'ai suivi
+                  deux spécialisations: une sur Symfony et une sur ReactJs comprenant chacune un projet from scratch
+                  (Cahier des
+                  Charges, MVP, MCD, Wireframes, Users Stories ...) d'une durée d'un mois par équipe en 4 springs. Je
+                  suis à la
+                  recherche d'un stage en POE ou encore mieux un emploi fixe afin de mettre en pratique mes nouvelles
+                  connaissances et
+                  celles à venir.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="personal-info plr">
+                <div class="row">
+                  <div class="info-item plr">
+                    <p>Date de naissance : <span>21 Février 1961</span></p>
+                  </div>
+                  <div class="info-item plr">
+                    <p>Email : <span>vhavet@gmail.com</span></p>
+                  </div>
+                  <div class="info-item plr">
+                    <p>Téléphone : <span>+33.6.95.91.63.35</span></p>
+                  </div>
+                  <div class="info-item plr">
+                    <p>Ville : <span>St Quentin</span></p>
+                  </div>
+                  <div class="info-item plr">
+                    <p>Disponibilité : <span>immédiate</span></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="buttons plr">
+                    <a href="#" class="btn">Télécharger le CV</a>
+                    <a href="#contact" data-section-index="1" class="btn hire-me">Contactez-moi</a>
+                  </div>
+                </div>
+              </div>
+              <div class="skills plr">
+                <div class="row">
+                  <div class="skill-item plr">
+                    <h5>HTML/CSS3</h5>
+                    <div class="progress-in" style="width: 50%"></div>
+                    <div class="skill-percent">50%</div>
+                  </div>
+                  <div class="skill-item plr">
+                    <h5>PHP/MySql</h5>
+                    <div class="progress-in" style="width: 40%"></div>
+                    <div class="skill-percent">40%</div>
+                  </div>
+                  <div class="skill-item plr">
+                    <h5>Symfony 4/5</h5>
+                    <div class="progress-in" style="width: 30%"></div>
+                    <div class="skill-percent">30%</div>
+                  </div>
+                  <div class="skill-item plr">
+                    <h5>JavaScript</h5>
+                    <div class="progress-in" style="width: 30%"></div>
+                    <div class="skill-percent">30%</div>
+                  </div>
+                  <div class="skill-item plr">
+                    <h5>React/Redux</h5>
+                    <div class="progress-in" style="width: 25%"></div>
+                    <div class="skill-percent">25%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="education plr">
+                <h3 class="title">Formations</h3>
+                <div class="row">
+                  <div class="timeline-box plr">
+                    <div class="timeline shadow-dark">
+                      <!-- Timeline Item -->
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h6 class="timeline-date">
+                          <i class="fa fa-calendar"> 2019 - 2020</i>
+                        </h6>
+                        <h4 class="timeline-title">Développeur Web et Web Mobile</h4>
+                        <p class="timeline-text">
+                          Ecole O'Clock (Téléprésentiel). <br>
+                           700 heures intensives, 3 mois de socle :<br> 
+                          -> HTML5 / CSS3 / PHP / JAVASCRIPT. <br>
+                          
+                          -> 1 mois de spécialisation : SYMFONY 4.<br>
+                          
+                          -> 1 mois de projet : Z'Artisan.<br>
+
+                          Spécialisation React :<br>
+                          -> 1 mois : React.<br>
+                          
+                          -> 1 mois de projet : o'Local
+                        </p>
+                      </div>
+                      <!-- Timeline Item End -->
+                      <!-- Timeline Item -->
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h6 class="timeline-date">
+                          <i class="fa fa-calendar"> 2019 - 2020</i>
+                        </h6>
+                        <h4 class="timeline-title">Développeur Web et Web Mobile</h4>
+                        <p class="timeline-text">
+                          Ecole AFPA. <br>
+                          -> Assurer l’administration et l’exploitation courantes d’un serveur, d’un réseau et des
+                          postes de travail.<br>
+      
+                          -> Exploiter et mettre en exploitation les ressources d’un système informatique.<br>
+      
+                          -> Proposer aux décideurs des solutions techniquement et financièrement valides lors des
+                          évolutions du système informatique..
+                        </p>
+                      </div>
+                      <!-- Timeline Item End -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="experience plr">
+                <h3 class="title">Experiences</h3>
+                <div class="row">
+                  <div class="timeline-box plr">
+                    <div class="timeline shadow-dark">
+                      <!-- Timeline Item -->
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h6 class="timeline-date">
+                          <i class="fa fa-calendar"> 04/2020 - 05/2020</i>
+                        </h6>
+                        <h4 class="timeline-title">Développeur Front-End (ReactJs/Redux)</h4>
+                        <p class="timeline-text">Application SPA (2 front - 2 back) en 4 sprints.</p>
+                      </div>
+                      <!-- Timeline Item End -->
+                      <!-- Timeline Item -->
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h6 class="timeline-date">
+                          <i class="fa fa-calendar"> 11/2019 - 12/2020</i>
+                        </h6>
+                        <h4 class="timeline-title">Développeur back-End (Symfony 4.3)</h4>
+                        <p class="timeline-text">Application API First (3 back - 2 front) en 4 sprints.</p>
+                      </div>
+                      <!-- Timeline Item End -->
+                      <!-- Timeline Item -->
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h6 class="timeline-date">
+                          <i class="fa fa-calendar"> 05/2019 - 07/2019</i>
+                        </h6>
+                        <h4 class="timeline-title">Technicien système réseaux</h4>
+                        <p class="timeline-text">Déploiement de Windows 7 vers Windows 10.</p>
+                      </div>
+                      <!-- Timeline Item End-->
+                      <!-- Timeline Item -->
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h6 class="timeline-date">
+                          <i class="fa fa-calendar"> 11/2017 - 12/2018</i>
+                        </h6>
+                        <h4 class="timeline-title">Technicien Micro IT Retail</h4>
+                        <p class="timeline-text">Déploiement, Maintenance, Installation de caisses, serveurs, switchs et
+                          périphériques. Maintenance Moneyline( bornes IRIS, ADD).</p>
+                      </div>
+                      <!-- Timeline Item End-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    <!-- About Section End -->
 
 
-</main-container>
-<!-- Main Container End -->
+    </div>
+    <!-- Main Content End -->
+
+
+  </main-container>
+  <!-- Main Container End -->
 
 
 
 </body>
+
 </html>
