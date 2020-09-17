@@ -1,0 +1,18 @@
+$pink_color: #ec1839;
+
+.aside .logo a::before{
+  border-top: 4px solid $pink_color;
+  border-left: 4px solid $pink_color;
+}
+
+.aside .logo a::after{
+  border-bottom: 4px solid $pink_color;
+  border-right: 4px solid $pink_color;
+}
+
+.aside .nav li a:hover,
+.aside .nav li a.active {
+  color: $pink_color;
+}
+
+
