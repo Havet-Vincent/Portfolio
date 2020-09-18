@@ -338,9 +338,9 @@ a { text-decoration: none; }
     }
 
     .personal-info {
-      -ms-flex: 0 60%;
-      flex: 0 60%;
-      max-width: 60%;
+      -ms-flex: 0 100%;
+      flex: 0 100%;
+      max-width: 100%;
       margin-top: 4rem;
 
       .info-item {
@@ -376,45 +376,92 @@ a { text-decoration: none; }
       }
     }
 
-    .skills {
-      -ms-flex: 0 40%;
-      flex: 0 40%;
-      max-width: 40%;
-      margin-top: 4rem;
 
-      .skill-item {
+
+    .education, .experience {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-top: 3rem;
+
+      h3.title {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+        font-weight: 700;
+        color: $body_light_heading_dark;
+      }
+
+      .timeline-box {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
-        margin-bottom: 1rem;
 
-        h5 {
-          line-height: 4rem;
-          font-weight: 600;
-          font-size: 1.6rem;
-          color: $body_light_heading_dark;
-          text-transform: capitalize;
-          margin: 0;
-        }
-
-        .progress {
-          background-color: #e3e3e3;
-          height: 0.7rem;
-          border-radius: 0.4rem;
+        .timeline {
+          background-color: $body_light_bg_light;
+          padding: 3rem 1.5rem;
+          border: 0.1rem solid $body_light_border_dark;
+          border-radius: 1rem;
           width: 100%;
-          position: relative;
 
-          .progress-in {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            border-radius: 0.4rem;
+          .timeline-item {
+            position: relative;
+            padding-left: 3.7rem;
+            padding-bottom: 5rem;
+
+            &:last-child { padding-bottom: 0rem; }
+
+            &::before {
+              content: '';
+              width: 0.1rem;
+              position: absolute;
+              height: 100%;
+              left: 0.7rem;
+              top: 0.3rem;
+            }
+
+            .circle-dot {
+              position: absolute;
+              left: 0;
+              top: 0.3rem;
+              height: 1.5rem;
+              width: 1.5rem;
+              border-radius: 50%;
+            }
+
+            .timeline-date {
+              font-size: 1.4rem;
+              font-weight: 400;
+              margin-bottom: 1.2rem;
+              color: $body_light_text;
+  
+              .fa {
+                margin-right: 0.5rem;
+              }
+            }
+            
+            .timeline-title {
+              font-size: 1.8rem;
+              font-weight: 700;
+              margin-bottom: 1.5rem;
+              text-transform: capitalize;
+              color: $body_light_heading_dark;
+            }
+
+            .timeline-text {
+              font-size: 1.6rem;
+              line-height: 2.5rem;
+              color: $body_light_text;
+              margin: 0;
+            }
           }
+
+
 
         }
       }
     }
+
+
   }
 
 }
