@@ -14,8 +14,12 @@ $pink_color: #ec1839;
 .aside .nav li a.active {
   color: $pink_color;
 }
-
+.about .about-content .skills .skill-item .progress .progress-in,
+#file,
+.btn,
+.section-title h2::before,
+.section-title h2::after,
 .home .intro .social-links a   {
-  background-color: #ec1839;
+  background-color: $pink_color;
 }
 
