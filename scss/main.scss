@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
 
 
-// General Style
+/* General style */
 
 $web_width: 1100px;
 
@@ -31,10 +31,9 @@ $grey_color: #7d7d7d;
 
 
 
-$transition: all 0.3s ease;
 $about_img: url('../img/about.jpg');
 
-
+:root { font-size: 62.5%; }
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -44,7 +43,6 @@ $about_img: url('../img/about.jpg');
   text-decoration: none;
 }
 
-html { font-size: 62.5%; }
 
 body {
   line-height: 1.5;
@@ -55,7 +53,10 @@ body {
 
 a { text-decoration: none; }
 
-// Utilitaires
+$transition: all 0.3s ease;
+
+
+/* Utilitaires */
 
 
 .plr{ padding-left: 1.5rem; padding-right: 1.5rem }
@@ -161,7 +162,8 @@ a { text-decoration: none; }
 
 .hidden { display: none!important; }
 
-// Aside
+
+/* Aside */
 
 .aside {
   width: 27rem;
@@ -251,7 +253,7 @@ a { text-decoration: none; }
   }
 }
 
-// Home Section 
+/* home section */
 
 .home {
   min-height: 100vh;
@@ -310,7 +312,7 @@ a { text-decoration: none; }
   }
 }
 
-// About Section
+/* About Section */
 
 .about {
   .about-content {
@@ -468,7 +470,7 @@ a { text-decoration: none; }
 
 }
 
-// Skills section
+/* Skills Section */
 
 .skills {
   .container {
@@ -500,6 +502,65 @@ a { text-decoration: none; }
           img { width: 7rem; height: 7rem; padding: 1rem;}
         }
 
+      }
+    }
+  }
+}
+
+/* Portfolio Section */ 
+
+.portfolio {
+  .container {
+    padding-bottom: 4rem;
+    
+    .portfolio-filter {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 4rem;
+      
+      button {
+        border: none;
+        background-color: transparent;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $body_light_heading_dark;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+        padding-bottom: 0.2rem;
+        -webkit-transition: $transition;
+        transition: $transition;
+        margin-right: 1rem;
+      }
+    }
+    
+    .portfolio-item {
+      -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      margin-bottom: 3rem;
+
+      .hide { display: none; }
+
+      .show {
+        display: block;
+        animation: showItem 0.5s ease;
+
+        @-webkit-keyframes showItem {
+          0%{
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            opacity: 0;
+          }
+          100%{
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
       }
     }
   }
