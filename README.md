@@ -12,3 +12,6 @@ yarn init
 ```
 yarn add node-sass -D
 ```
+
+
+"sass": "node-sass -w scss/ -o dist/css -r --output-style=compressed"
