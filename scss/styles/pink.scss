@@ -10,6 +10,14 @@ $pink_color: #ec1839;
   border-right: 4px solid $pink_color;
 }
 
+
+.contact .contact-info-item .icon .fa,
+.lightbox .lightbox-controls .prev-item .fa, 
+.lightbox .lightbox-controls .next-item .fa,
+.portfolio .portfolio-item .portfolio-info .icon .fa,
+.portfolio .portfolio-filter button.active,
+.skill .skill-item .skill-item-inner .icon .fa,
+.about .about-content .about-text h3 span,
 .aside .nav li a:hover,
 .aside .nav li a.active {
   color: $pink_color;
@@ -24,4 +32,10 @@ $pink_color: #ec1839;
 .home .intro .social-links a   {
   background-color: $pink_color;
 }
+
+.portfolio .portfolio-filter button.active {
+  border-color: #ec1839;
+}
+
+
 

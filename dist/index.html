@@ -238,7 +238,7 @@
           </div>
           <div class="row">
 
-            <!-- Service Item -->
+            <!-- Skill Item -->
             <div class="skill-item plr">
               <div class="skill-item-inner">
                 <h4>Front-End</h4>
@@ -265,9 +265,9 @@
                 </div>
               </div>
             </div>
-              <!-- Service Item End -->    
+              <!-- Skill Item End -->    
       
-              <!-- Service Item -->
+              <!-- Skill Item -->
               <div class="skill-item plr">
                 <div class="skill-item-inner">
                   <h4>Back-End</h4>
@@ -288,8 +288,8 @@
                   </div>
                 </div>
               </div>
-              <!-- Service Item End -->
-              <!-- Service Item -->
+              <!-- Skill Item End -->
+              <!-- Skill Item -->
               <div class="skill-item plr">
                 <div class="skill-item-inner">
                   <h4>Outils</h4>
@@ -310,14 +310,14 @@
                   </div>
                 </div>
               </div>
-              <!-- Service Item End -->        
+              <!-- Skill Item End -->        
           </div>
         </div>
       </section>
       <!-- Skills Section End -->
 
       <!-- Portfolio Section -->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section hidden" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="section-title plr">
@@ -384,6 +384,84 @@
       <!-- Portfolio Section End -->
 
 
+      <!-- Contact Section  -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title plr">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- contact-info-item -->
+            <div class="contact-info-item plr">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Appelez nous</h4>
+              <p>(+33).6.95.91.63.35</p>
+            </div>
+            <!-- contact-info-item End -->
+            <!-- contact-info-item -->
+            <div class="contact-info-item plr">
+              <div class="icon"><i class="fa fa-map-marker"></i></div>
+              <h4>Domicile</h4>
+              <p>1, rue des arbalétriers<br> 02100 St Quentin, France</p>
+            </div>
+            <!-- contact-info-item End -->
+            <!-- contact-info-item -->
+            <div class="contact-info-item plr">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>vhavet@gmail.com</p>
+            </div>
+            <!-- contact-info-item End -->
+          </div>
+            <!-- Contact Form -->
+            <div class="row">
+              <form action="" class="contact-form plr">
+                <div class="row">
+                  <div class="form-item col-6 plr">
+                    <div class="form-group">
+                      <label for="name"></label>
+                      <input type="text" class="form-control" placeholder="Nom*" id="name" required>
+                    </div>
+                  </div>
+                  <div class="form-item col-6 plr">
+                    <div class="form-group">
+                      <label for="email"></label>
+                      <input type="email" class="form-control" placeholder="Email*" id="email" required>
+                    </div>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="form-item col-12 plr">
+                      <div class="form-group">
+                        <label for="subject"></label>
+                        <input type="text" class="form-control" placeholder="Sujet*" id="subject" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-item col-12 plr">
+                      <div class="form-group">
+                        <label for="message"></label>
+                        <textarea class="form-control" placeholder="Votre message..." id="message" required></textarea>                         
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 plr">                      
+                      <button type="submit" class="btn">Envoyez Votre Message</button>
+                    </div>
+                  </div>
+              </form>
+            </div>
+            <!-- Contact Form End -->
+        </div>
+      </section>
+
+      <!-- Contact Section End -->
+
+
     </div>
     <!-- Main Content End -->
 
@@ -391,8 +469,32 @@
   </main-container>
   <!-- Main Container End -->
 
+      <!-- Lightbox -->
+      <div class="lightbox">
+        <div class="lightbox-content">
+          <div class="lightbox-close">&times;</div>
+          <img src="img/portfolio/pokedex.png" class="lightbox-img" onclick="nextItem()">
+          <div class="lightbox-caption">
+            <div class="caption-text"></div>
+            <div class="caption-counter"></div>
+          </div>
+        </div>
+        <div class="lightbox-controls">
+          <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+          <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+        </div>
+      </div>
+      <!-- Lightbox End -->
 
-  <script src="https://kit.fontawesome.com/07a60a1a2a.js" crossorigin="anonymous"></script>
+      <!-- Live Style Switcher -->
+
+      <!-- Live Style Switcher End -->
+
+
+      <script src="https://kit.fontawesome.com/07a60a1a2a.js" crossorigin="anonymous"></script>
+      
+      <!-- Template js -->
+      <script src="js/script.js"></script>
 </body>
 
 </html>
