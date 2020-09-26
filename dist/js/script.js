@@ -9,9 +9,8 @@ const filterContainer = document.querySelector(".portfolio-filter"),
       portfolioItems=document.querySelectorAll(".portfolio-item"),
       totalPortfolioItem=portfolioItems.length;
 
-      console.log(filterBtns);
-
       console.log( totalPortfolioItem);
+  
 
       for (let i=0; i<totalFilterBtn; i++) {
         filterBtns[i].addEventListener("click", function() {
@@ -25,10 +24,12 @@ const filterContainer = document.querySelector(".portfolio-filter"),
               portfolioItems[k].classList.remove("hide");
               portfolioItems[k].classList.add("show");
             } else {
+              
               portfolioItems[k].classList.remove("show");
               portfolioItems[k].classList.add("hide");
             }
             if (filterValue === "all") {
+              portfolioItems[k].getAttribute("data-category");
               portfolioItems[k].classList.remove("hide");
               portfolioItems[k].classList.remove("show");
             }
@@ -42,6 +43,8 @@ const filterContainer = document.querySelector(".portfolio-filter"),
 const lightbox = document.querySelector(".lightbox"),
       lightboxImg = lightbox.querySelector(".lightbox-img"),
       lightboxClose = lightbox.querySelector(".lightbox-close"),
+      lightboxLink = lightbox.querySelector(".lightbox-link"),
+      lightboxCaption = lightbox.querySelector(".lightbox-caption"),
       lightboxText= lightbox.querySelector(".caption-text"),
       lightboxCounter = lightbox.querySelector(".caption-counter");
 let itemIndex = 0;
@@ -72,17 +75,22 @@ function prevItem() {
   changeItem();
 }
 
+
 function toggleLightbox() {
   lightbox.classList.toggle("open");
 }
 
 function changeItem() {
+  linkHref= portfolioItems[itemIndex].querySelector(".portfolio-img a").getAttribute("href");
   imgSrc = portfolioItems[itemIndex].querySelector(".portfolio-img img").getAttribute("src");
+  const filterSite = portfolioItems[itemIndex].getAttribute("data-site");
   lightboxImg.src = imgSrc;
+  lightboxLink.href = linkHref;
   lightboxText.innerHTML = portfolioItems[itemIndex].querySelector("h4").innerHTML;
   lightboxCounter.innerHTML = (itemIndex+1) + " of " + totalPortfolioItem;
-  console.log(imgSrc);
 }
+
+
 
 // close Lightbox
 

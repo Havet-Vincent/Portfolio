@@ -543,16 +543,14 @@ a {
       position: absolute;
       height: 4rem;
       width: 4rem;
-      top: 0;
+      top: -0.5rem;
       right: 0;
       font-size: 3.2rem;
-      text-align: right;
-      color: #ffffff;
-      line-height: 4rem; }
-      .lightbox .lightbox-content .lightbox-close .container {
-        max-width: 110rem;
-        width: 100%;
-        margin: auto; }
+      text-align: center;
+      line-height: 4rem;
+      cursor: pointer;
+      background-color: #ffffff;
+      border-radius: 50%; }
     .lightbox .lightbox-content .lightbox-caption {
       position: absolute;
       bottom: 0;

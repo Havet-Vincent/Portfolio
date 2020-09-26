@@ -720,12 +720,15 @@ $transition: all 0.3s ease;
       position: absolute;
       height: 4rem;
       width: 4rem;
-      top: 0;
+      top: -0.5rem;
       right: 0;
       font-size: 3.2rem;
-      text-align: right;
-      color: $body_light_heading_light;.container { max-width: $web_width; width: 100%; margin: auto;}
+      text-align: center;
       line-height: 4rem;
+      cursor: pointer;
+      background-color: $body_light_heading_light;
+      border-radius: 50%;
+
     }
 
     .lightbox-caption {
