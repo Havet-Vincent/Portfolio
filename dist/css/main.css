@@ -454,7 +454,8 @@ a {
     padding: 3rem;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    opacity: 0; }
+    opacity: 0;
+    justify-content: space-between; }
     .portfolio .portfolio-item-inner .portfolio-info h4 {
       font-size: 1.8rem;
       font-weight: 700;
@@ -465,6 +466,11 @@ a {
       -webkit-transform: translateX(-2rem);
       transform: translateX(-2rem);
       opacity: 0; }
+      .portfolio .portfolio-item-inner .portfolio-info h4 span {
+        font-size: 1.4rem; }
+      .portfolio .portfolio-item-inner .portfolio-info h4 i {
+        color: white;
+        font-size: 1rem; }
     .portfolio .portfolio-item-inner .portfolio-info .icon {
       height: 4rem;
       width: 4rem;
@@ -530,7 +536,12 @@ a {
     -webkit-transform: scale(1);
     transform: scale(1); } }
   .lightbox .lightbox-content {
-    position: relative; }
+    position: relative;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 1;
+    z-index: 1; }
     .lightbox .lightbox-content img {
       height: auto;
       width: auto;
@@ -564,6 +575,13 @@ a {
       color: #ffffff;
       font-weight: 400;
       z-index: -1; }
+      .lightbox .lightbox-content .lightbox-caption span {
+        font-size: 1.1rem; }
+    .lightbox .lightbox-content .caption-content {
+      color: #ffffff;
+      position: absolute;
+      z-index: -2;
+      margin-top: 1rem; }
   .lightbox .lightbox-controls .prev-item {
     left: 3rem; }
   .lightbox .lightbox-controls .next-item {
