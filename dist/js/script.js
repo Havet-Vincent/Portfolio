@@ -46,7 +46,9 @@ const lightbox = document.querySelector(".lightbox"),
       lightboxLink = lightbox.querySelector(".lightbox-link"),
       lightboxCaption = lightbox.querySelector(".lightbox-caption"),
       lightboxText= lightbox.querySelector(".caption-text"),
-      lightboxCounter = lightbox.querySelector(".caption-counter");
+      lightboxIcon= lightbox.querySelector(".caption-icon"),
+      lightboxCounter = lightbox.querySelector(".caption-counter"),
+      lightboxContent = lightbox.querySelector(".caption-content");
 let itemIndex = 0;
 
 for (let i=0; i<totalPortfolioItem; i++) {
@@ -81,13 +83,16 @@ function toggleLightbox() {
 }
 
 function changeItem() {
-  linkHref= portfolioItems[itemIndex].querySelector(".portfolio-img a").getAttribute("href");
+  linkHref = portfolioItems[itemIndex].querySelector(".portfolio-img a").getAttribute("href");
   imgSrc = portfolioItems[itemIndex].querySelector(".portfolio-img img").getAttribute("src");
+  linkIcon= portfolioItems[itemIndex].querySelector(".fas");
   const filterSite = portfolioItems[itemIndex].getAttribute("data-site");
   lightboxImg.src = imgSrc;
   lightboxLink.href = linkHref;
   lightboxText.innerHTML = portfolioItems[itemIndex].querySelector("h4").innerHTML;
+  lightboxIcon.innerHTML = document.getElementsByClassName("lightbox-caption").innerHTML = '<i class="fas fa-link"></i>'; 
   lightboxCounter.innerHTML = (itemIndex+1) + " of " + totalPortfolioItem;
+  lightboxContent.innerHTML = portfolioItems[itemIndex].querySelector("p").innerHTML;
 }
 
 
