@@ -397,7 +397,6 @@ $transition: all 0.3s ease;
         max-width: 50%;
 
         p {
-          font-size: 1.6rem;
           font-weight: 600;
           font-size: 1.6rem;
           margin: 0;
@@ -458,7 +457,7 @@ $transition: all 0.3s ease;
             padding-left: 3.7rem;
             padding-bottom: 5rem;
 
-            &:last-child { padding-bottom: 0rem; }
+            &:last-child { padding-bottom: 0; }
 
             &::before {
               content: '';
@@ -484,9 +483,7 @@ $transition: all 0.3s ease;
               margin-bottom: 1.2rem;
               color: $body_light_text;
   
-              .fa {
-                margin-right: 0.5rem;
-              }
+              .fa { margin-right: 0.5rem; }
             }
             
             .timeline-title {
@@ -518,12 +515,12 @@ $transition: all 0.3s ease;
     .skill-item {
       -ms-flex: 0 0 33.33%;
       flex: 0 0 33.33%;
+      max-width: 33.33%;
+      display: -ms-flexbox;
+      display: flex;
 
-      h4 { font-size: 3rem; margin-bottom: 1rem;}
-
-      .skill-item-inner {
-        display: inline-block;
-        flex-wrap: wrap;
+      
+      .skill-item-inner {      
         background-color: #fdf9ff;
         border: 0.1rem solid #d4d4e3;
         border-radius: 1rem;
@@ -531,9 +528,15 @@ $transition: all 0.3s ease;
         text-align: center;
         -webkit-transition: $transition;
         transition: $transition;
-        width: 100%;
-        height: 100%;
-
+      
+        
+        h4 { 
+          font-size: 2rem; 
+          margin-bottom: 1rem;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+        
         .icon { 
           display: inline-block; 
           flex-wrap: wrap; 
@@ -926,7 +929,7 @@ $transition: all 0.3s ease;
         outline: none;
       }
     }
-
+    
     .btn {
       height: 5rem;
       padding: 0 5rem;
@@ -935,3 +938,84 @@ $transition: all 0.3s ease;
 }
 
 
+/* Responsive */ 
+@media (max-width: 575px) {
+  .contact .contact-info-item,
+  .portfolio .portfolio-item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .about .about-content .personal-info .info-item p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  
+  .section-title h2 {  font-size: 3.4rem; line-height: 2.8rem;}
+  
+}
+
+@media (max-width: 767px) {
+  .contact .contact-form .col-6,
+  .skills .container .skill-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  .portfolio .portfolio-filter button {
+    margin-bottom: 10px;
+  }
+  .about .about-content .about-text h3 {
+    line-height: 2.5rem;
+  }
+  .about .about-content .education .timeline-box, .about .about-content .experience .timeline-box,
+  .about .about-content .personal-info .buttons {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio .portfolio-item,
+  .service .service-item {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+    @media (max-width: 1199px) {
+      .section {
+        left: 0;
+    
+        &.open { left: 27rem; }
+    
+        .container {
+          padding-top: 7rem;
+        }
+      } 
+    
+      .aside  {
+        left: -27rem;
+    
+        &.open { left: 0rem; }
+    
+        .nav-toggler {
+          display: -ms-flexbox;
+          display: flex;
+          left: 3rem;
+    
+          &.open { left: 27.5rem; }
+        }
+      }
+    
+      .about .about-content .personal-info .info-inner p span {
+        display: block;
+        margin-left: 0;
+      }
+    }

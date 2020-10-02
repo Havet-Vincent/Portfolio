@@ -1,14 +1,22 @@
-.aside .logo a::before {
-  border-top: 4px solid #A65BD9;
-  border-left: 4px solid #A65BD9; }
+ $pink_color: #A65BD9;
+// $pink_color: #EC0101;
+//$pink_color: #2EC1AC;
+//$pink_color: #AC4B1C;
 
-.aside .logo a::after {
-  border-bottom: 4px solid #A65BD9;
-  border-right: 4px solid #A65BD9; }
+.aside .logo a::before{
+  border-top: 4px solid $pink_color;
+  border-left: 4px solid $pink_color;
+}
+
+.aside .logo a::after{
+  border-bottom: 4px solid $pink_color;
+  border-right: 4px solid $pink_color;
+}
+
 
 .contact .contact-info-item .icon .fa,
 .lightbox .lightbox-content .lightbox-close,
-.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .prev-item .fa, 
 .lightbox .lightbox-controls .next-item .fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .portfolio .portfolio-filter button.active,
@@ -16,7 +24,8 @@
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
 .aside .nav li a.active {
-  color: #A65BD9; }
+  color: $pink_color;
+}
 
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline .timeline-item::before,
@@ -24,8 +33,13 @@
 .btn,
 .section-title h2::before,
 .section-title h2::after,
-.home .intro .social-links a {
-  background-color: #A65BD9; }
+.home .intro .social-links a   {
+  background-color: $pink_color;
+}
 
 .portfolio .portfolio-filter button.active {
-  border-color: #A65BD9; }
+  border-color: #A65BD9;
+}
+
+
+
