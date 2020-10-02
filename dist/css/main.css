@@ -357,8 +357,7 @@ a {
     flex: 0 0 33.33%; }
     .skills .container .skill-item h4 {
       font-size: 3rem;
-      margin-bottom: 1rem;
-      text-decoration: underline; }
+      margin-bottom: 1rem; }
     .skills .container .skill-item .skill-item-inner {
       display: inline-block;
       flex-wrap: wrap;
