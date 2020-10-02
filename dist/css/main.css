@@ -21,6 +21,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
+input, textarea, select {
+  font-family: 'Montserrat', sans-serif; }
+
 a {
   text-decoration: none; }
 
@@ -53,6 +56,27 @@ a {
   .section .container {
     padding-top: 6rem;
     padding-bottom: 7rem; }
+  .section.active {
+    opacity: 1;
+    z-index: 2;
+    -webkit-animation: slideSection 1s ease;
+    animation: slideSection 1s ease; }
+
+@-webkit-keyframes slideSection {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+
+@keyframes slideSection {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
 
 .section-title {
   -ms-flex: 0 0 100%;
@@ -63,6 +87,7 @@ a {
   .section-title h2 {
     font-weight: 700;
     font-size: 4rem;
+    color: #302e4d;
     font-family: 'Rubik', sans-serif;
     margin: 0;
     position: relative; }
@@ -82,6 +107,9 @@ a {
       top: 100%;
       left: 0;
       margin-top: 2.5rem; }
+
+.section.back-section {
+  z-index: 1; }
 
 .row {
   display: -ms-flexbox;
@@ -220,7 +248,7 @@ a {
       font-size: 1.6rem;
       color: #504e70;
       font-weight: 500;
-      margin: 0;
+      margin-top: 2rem;
       line-height: 2.2rem; }
     .home .intro .social-links {
       margin-top: 2.5rem; }
@@ -368,7 +396,8 @@ a {
       text-align: center;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
       .skills .container .skill-item .skill-item-inner .icon {
         display: inline-block;
         flex-wrap: wrap; }
