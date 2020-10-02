@@ -9,8 +9,6 @@ const filterContainer = document.querySelector(".portfolio-filter"),
       portfolioItems=document.querySelectorAll(".portfolio-item"),
       totalPortfolioItem=portfolioItems.length;
 
-      console.log( totalPortfolioItem);
-  
 
       for (let i=0; i<totalFilterBtn; i++) {
         filterBtns[i].addEventListener("click", function() {
@@ -174,4 +172,5 @@ document.querySelector(".hire-me").addEventListener("click", function(){
   removeBackSectionClass();
   addBackSectionClass(sectionIndex);
 })
+
 
