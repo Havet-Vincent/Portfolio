@@ -884,6 +884,16 @@ $transition: all 0.3s ease;
       textarea.form-control {
         height: 14rem;
       }
+
+      /* invalid fields:  input and textarea */
+      input:invalid, textarea:invalid{
+        border-color: #900;
+        background-color: #FDD;
+      }
+      
+      input:focus:invalid, textarea:focus:invalid  {
+        outline: none;
+      }
     }
 
     .btn {

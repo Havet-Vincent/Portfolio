@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styles/pink.css">
   <title>Mon Portfolio</title>
@@ -229,7 +230,7 @@
       <!-- About Section End -->
 
       <!-- Skills Section -->
-      <section class="skills section " id="skills">
+      <section class="skills section hidden" id="skills">
         <div class="container">
           <div class="row">
             <div class="section-title plr">
@@ -440,18 +441,18 @@
 
 
       <!-- Contact Section  -->
-      <section class="contact section hidden" id="contact">
+      <section class="contact section " id="contact">
         <div class="container">
           <div class="row">
             <div class="section-title plr">
-              <h2>Contact Me</h2>
+              <h2>Appelez-moi</h2>
             </div>
           </div>
           <div class="row">
             <!-- contact-info-item -->
             <div class="contact-info-item plr">
               <div class="icon"><i class="fa fa-phone"></i></div>
-              <h4>Appelez nous</h4>
+              <h4>Appelez-moi</h4>
               <p>(+33).6.95.91.63.35</p>
             </div>
             <!-- contact-info-item End -->
@@ -472,18 +473,20 @@
           </div>
             <!-- Contact Form -->
             <div class="row">
-              <form action="" class="contact-form plr">
+              <form method="POST" action="https://formspree.io/f/mzbkzjyl" class="contact-form plr"  id="my-form" accept-charset="utf-8">
                 <div class="row">
                   <div class="form-item col-6 plr">
                     <div class="form-group">
                       <label for="name"></label>
-                      <input type="text" class="form-control" placeholder="Nom*" id="name" required>
+                      <input type="text" class="form-control" placeholder="Nom*" id="name" name="name" required  autofocus>
+                      <span class="errorName" aria-live="polite"></span>
                     </div>
                   </div>
                   <div class="form-item col-6 plr">
                     <div class="form-group">
                       <label for="email"></label>
-                      <input type="email" class="form-control" placeholder="Email*" id="email" required>
+                      <input type="email" class="form-control" placeholder="Email*" id="email" name="email" required>
+
                     </div>
                   </div>
                 </div>
@@ -491,7 +494,7 @@
                     <div class="form-item col-12 plr">
                       <div class="form-group">
                         <label for="subject"></label>
-                        <input type="text" class="form-control" placeholder="Sujet*" id="subject" required>
+                        <input type="text" class="form-control" placeholder="Sujet*" id="subject" name="subject" required>
                       </div>
                     </div>
                   </div>
@@ -499,14 +502,15 @@
                     <div class="form-item col-12 plr">
                       <div class="form-group">
                         <label for="message"></label>
-                        <textarea class="form-control" placeholder="Votre message..." id="message" required></textarea>                         
+                        <textarea class="form-control" placeholder="Votre message..." id="message" name="message" required></textarea>                         
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-12 plr">                      
-                      <button type="submit" class="btn">Envoyez Votre Message</button>
+                      <button type="submit" id="my-form-button" class="btn">Envoyez Votre Message</button>
                     </div>
+                    <p id="my-form-status" aria-live="polite"  class="error" ></p>
                   </div>
               </form>
             </div>
@@ -549,10 +553,12 @@
       <!-- Live Style Switcher End -->
 
 
-      <script src="https://kit.fontawesome.com/07a60a1a2a.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/07a60a1a2a.js" crossorigin="anonymous"></script
+  
       
       <!-- Template js -->
       <script src="js/script.js"></script>
+      <script src="js/email.js"></script>
 </body>
 
 </html>
