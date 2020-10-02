@@ -88,7 +88,7 @@ function changeItem() {
   lightboxImg.src = imgSrc;
   lightboxLink.href = linkHref;
   lightboxText.innerHTML = portfolioItems[itemIndex].querySelector("h4").innerHTML;
-  lightboxIcon.innerHTML = document.getElementsByClassName("lightbox-caption").innerHTML = '<i class="fas fa-link"></i>'; 
+  lightboxIcon.innerHTML = document.getElementsByClassName("lightbox-caption").innerHTML = '<i class="fas fa-external-link-alt"></i>'; 
   lightboxCounter.innerHTML = (itemIndex+1) + " of " + totalPortfolioItem;
   lightboxContent.innerHTML = portfolioItems[itemIndex].querySelector("p").innerHTML;
 }
