@@ -1,10 +1,10 @@
 .aside .logo span::before {
-  border-top: 4px solid #A65BD9;
-  border-left: 4px solid #A65BD9; }
+  border-top: 4px solid #2EC1AC;
+  border-left: 4px solid #2EC1AC; }
 
 .aside .logo span::after {
-  border-bottom: 4px solid #A65BD9;
-  border-right: 4px solid #A65BD9; }
+  border-bottom: 4px solid #2EC1AC;
+  border-right: 4px solid #2EC1AC; }
 
 .contact .contact-info-item .icon .fa,
 .lightbox .lightbox-content .lightbox-close,
@@ -16,7 +16,7 @@
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
 .aside .nav li a.active {
-  color: #A65BD9; }
+  color: #2EC1AC; }
 
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline .timeline-item::before,
@@ -28,7 +28,7 @@
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
 .home .intro .social-links a {
-  background-color: #A65BD9; }
+  background-color: #2EC1AC; }
 
 .portfolio .portfolio-filter button.active {
   border-color: #A65BD9; }
