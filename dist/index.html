@@ -7,6 +7,11 @@
   <meta name="robots" content="noindex">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styles/purple.css">
+  <!-- Live Style Switcher -->
+  <link rel="stylesheet" class="alternate-style" title="purple" href="css/style/purple.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="purple" href="css/style/pink.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="purple" href="css/style/green.css" type="text/css" disabled>
+  <link rel="stylesheet" href="css/styles/styleSwitcher.css">
   <title>Mon Portfolio</title>
 </head>
 
@@ -141,7 +146,7 @@
                           <h4 class="timeline-title">Développeur Web et Web Mobile</h4>
                           <p class="timeline-text">
                             Ecole O'Clock (Téléprésentiel). <br>
-                             700 heures intensives, 3 mois de socle :<br> 
+                             700 heures intensives, 3 mois de socle : <br> 
                              &nbsp; -> HTML5 / CSS3 / PHP / JAVASCRIPT. <br>
                             
                              &nbsp; -> 1 mois de spécialisation : SYMFONY 4.<br>
@@ -554,15 +559,41 @@
       <!-- Lightbox End -->
 
       <!-- Live Style Switcher -->
+      <div class="style-switcher">
+        <div class="toggle-style-switcher">
+          <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Sélecteur de style</h5>
+        <ul>
+          <li><a href="javascript:void(0);" title="purple" stle="background-color: #A65BD9" onclick="setActiveStyle('purple')"></a></li>
+          <li><a href="javascript:void(0);" title="pink" stle="background-color: #EC0101" onclick="setActiveStyle('pink')"></a></li>
+          <li><a href="javascript:void(0);" title="green" stle="background-color: #2EC1AC" onclick="setActiveStyle('green')"></a></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label>
+          <input type="radio" name="body-skin" class="body-skin" value="light" checked="true">
+          Clair
+        </label>
+        <label>
+          <input type="radio" name="body-skin" class="body-skin" value="dark">
+          Noir
+        </label>
+      </div>
 
       <!-- Live Style Switcher End -->
 
       <!-- Kit Font js -->
       <script src="https://kit.fontawesome.com/07a60a1a2a.js" crossorigin="anonymous"></script
-  
+    
       <!-- Template js -->
       <script src="js/script.js"></script>
+        
+      <!-- Live Style js -->
+      <script src="js/styleSwitcher.js"></script>
+        
+      <!-- Email js -->
       <script src="js/email.js"></script>
+
 </body>
 
 </html>
