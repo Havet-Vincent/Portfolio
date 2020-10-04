@@ -63,7 +63,7 @@ $transition: all 0.3s ease;
 /* Utilitaires */
 
 
-.plr{ padding-left: 1.5rem; padding-right: 1.5rem }
+.plr { padding-left: 1.5rem; padding-right: 1.5rem; }
 
 .container { max-width: $web_width; width: 100%; margin: auto;}
 
@@ -83,10 +83,54 @@ $transition: all 0.3s ease;
   opacity: 1;
   -webkit-transition: $transition;
   transition: $transition;
+  
+  
+  &.back-section {
+    z-index: 1;
+  }
 
   .container {
     padding-top: 6rem;
     padding-bottom: 7rem;
+
+    .section-title {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 6rem;
+      
+      h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        color: $body_light_heading_dark;
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+        text-transform: capitalize;
+        position: relative;
+        margin-top: 1rem;
+    
+        &::before {
+          content: '';
+          height: 0.4rem;
+          width: 5rem;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          margin-top: 1.5rem;
+        }
+    
+        &::after {
+          content: '';
+          height: 0.4rem;
+          width: 2.5rem;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          margin-top: 2.5rem;
+        }
+      }
+    }
+
   }
 
    &.active {
@@ -117,48 +161,11 @@ $transition: all 0.3s ease;
       transform: translateX(0%);
     }
   }
+
+  
 }
 
-.section-title {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 6rem;
-  text-transform: capitalize;
 
-  h2 {
-    font-weight: 700;
-    font-size: 4rem;
-    color: $body_light_heading_dark;
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    position: relative;
-
-    &::before {
-      content: '';
-      height: 0.4rem;
-      width: 5rem;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      margin-top: 1.5rem;
-    }
-
-    &::after {
-      content: '';
-      height: 0.4rem;
-      width: 2.5rem;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      margin-top: 2.5rem;
-    }
-  }
-}
-
-.section.back-section {
-  z-index: 1;
-}
 
 .row {
   display: -ms-flexbox;
@@ -259,6 +266,70 @@ $transition: all 0.3s ease;
       right: 0;
     }
   }
+
+  .nav-toggler {
+    height: 4rem;
+    width: 4.5rem;
+    border: 0.1rem solid $body_light_border_dark;
+    cursor: pointer;
+    position: fixed;
+    left: 35rem;
+    top: 1.8rem;
+    z-index: 11;
+    border-radius: 0.5rem;
+    background-color: $body_light_bg_light;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: $transition;
+    transition: $transition;
+
+    
+    span {
+      height: 0.2rem;
+      width: 1.8rem;
+      display: inline-block;
+      position: relative;
+      
+      &::before {
+        content: '';
+        height: 0.2rem;
+        width: 1.8rem;
+        position: absolute;
+        top: -0.6rem;
+        left: 0;
+      }
+      
+      &::after {
+        content: '';
+        height: 0.2rem;
+        width: 1.8rem;
+        position: absolute;
+        top: 0.6rem;
+        left: 0;
+      }  
+    }
+
+    &.open span { 
+      background-color: transparent; 
+
+      &::before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      &::after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 0;
+      }
+    }
+
+  }
+
   .nav {
     list-style: none;
     margin: 8rem 0;
@@ -359,8 +430,8 @@ $transition: all 0.3s ease;
 /* About Section */
 .about {
   .about-content {
-    -ms-flex: 0 100%;
-    flex: 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
 
     .about-text {
@@ -510,7 +581,7 @@ $transition: all 0.3s ease;
 /* Skills Section */
 .skills {
   .container {
-    padding: 4rem;
+  
 
     .skill-item {
       -ms-flex: 0 0 33.33%;
@@ -939,6 +1010,64 @@ $transition: all 0.3s ease;
 
 
 /* Responsive */ 
+
+@media (max-width: 1199px) {
+  .section {
+    left: 0;
+    
+    &.open { left: 27rem; }
+
+    .container { padding-top: 7rem; }
+  } 
+
+  .aside  {
+    left: -27rem;
+
+    &.open { left: 0; }
+
+    .nav-toggler {
+      display: -ms-flexbox;
+      display: flex;
+      left: 3rem;
+
+      &.open { left: 27.5rem; }
+    }
+  }
+
+  .about .about-content .personal-info .info-inner p span {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio .portfolio-item,
+  .service .service-item {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .contact-form .col-6,
+  .skills .container .skill-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .personal-info {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  .portfolio .portfolio-filter button { margin-bottom: 10px; }
+
+  .about .about-content .about-text h3 { line-height: 2.5rem; }
+
+  .about .about-content .education .timeline-box, .about .about-content .experience .timeline-box,
+  .about .about-content .personal-info .buttons { margin-bottom: 1rem; }
+}
+  
 @media (max-width: 575px) {
   .contact .contact-info-item,
   .portfolio .portfolio-item {
@@ -952,70 +1081,10 @@ $transition: all 0.3s ease;
     line-height: 2rem;
   }
   
-  .section-title h2 {  font-size: 3.4rem; line-height: 2.8rem;}
+  .home .intro h1, .section .container .section-title h2 {  font-size: 3.4rem; line-height: 3rem;}
+
+  .home .intro .social-links a { margin: 0.2rem 0.4rem; }
   
 }
 
-@media (max-width: 767px) {
-  .contact .contact-form .col-6,
-  .skills .container .skill-item,
-  .about .about-content .experience,
-  .about .about-content .education,
-  .about .about-content .skills,
-  .about .about-content .personal-info {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 1rem;
-  }
-  .portfolio .portfolio-filter button {
-    margin-bottom: 10px;
-  }
-  .about .about-content .about-text h3 {
-    line-height: 2.5rem;
-  }
-  .about .about-content .education .timeline-box, .about .about-content .experience .timeline-box,
-  .about .about-content .personal-info .buttons {
-    margin-bottom: 1rem;
-  }
-}
 
-@media (max-width: 991px) {
-  .portfolio .portfolio-item,
-  .service .service-item {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-    @media (max-width: 1199px) {
-      .section {
-        left: 0;
-    
-        &.open { left: 27rem; }
-    
-        .container {
-          padding-top: 7rem;
-        }
-      } 
-    
-      .aside  {
-        left: -27rem;
-    
-        &.open { left: 0rem; }
-    
-        .nav-toggler {
-          display: -ms-flexbox;
-          display: flex;
-          left: 3rem;
-    
-          &.open { left: 27.5rem; }
-        }
-      }
-    
-      .about .about-content .personal-info .info-inner p span {
-        display: block;
-        margin-left: 0;
-      }
-    }
