@@ -1,8 +1,6 @@
 const links = document.querySelectorAll(".alternate-style"),
       totalLinks = links.length;
 
-      console.log(totalLinks);
-
 function setActiveStyle(color) {
   for (let i=0; i<totalLinks; i++) {
     if (color === links[i].getAttribute("title")) {
