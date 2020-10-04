@@ -3,12 +3,12 @@
 //$pink_color: #2EC1AC;
 //$pink_color: #AC4B1C;
 
-.aside .logo a::before{
+.aside .logo span::before{
   border-top: 4px solid $pink_color;
   border-left: 4px solid $pink_color;
 }
 
-.aside .logo a::after{
+.aside .logo span::after{
   border-bottom: 4px solid $pink_color;
   border-right: 4px solid $pink_color;
 }

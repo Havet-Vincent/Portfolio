@@ -173,7 +173,7 @@ a {
     overflow: auto; }
   .aside .logo {
     padding: 3rem 0; }
-    .aside .logo a {
+    .aside .logo span {
       font-size: 4rem;
       color: #302e4d;
       font-family: 'Pacifico', cursive;
@@ -183,20 +183,20 @@ a {
       position: relative;
       padding: 0 1rem;
       line-height: 5rem; }
-    .aside .logo a::before {
-      content: '';
-      height: 2rem;
-      width: 2rem;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .aside .logo a::after {
-      content: '';
-      height: 2rem;
-      width: 2rem;
-      position: absolute;
-      bottom: 0;
-      right: 0; }
+      .aside .logo span::before {
+        content: '';
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .aside .logo span::after {
+        content: '';
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
   .aside .nav-toggler {
     height: 4rem;
     width: 4.5rem;
@@ -772,7 +772,7 @@ body.dark .about-content .timeline-box .about-text h3,
 body.dark .about-content .about-text h3,
 body.dark .section .container .section-title h2,
 body.dark .home .intro h1,
-body.dark .aside .logo a,
+body.dark .aside .logo span,
 body.dark .aside .nav li a {
   color: #ffffff; }
 

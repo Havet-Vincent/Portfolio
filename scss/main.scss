@@ -236,7 +236,7 @@ $transition: all 0.3s ease;
   .logo {
     padding: 3rem 0;
 
-    a {
+    span {
       font-size: 4rem;
       color: $body_light_heading_dark;
       font-family: 'Pacifico', cursive; 
@@ -246,24 +246,24 @@ $transition: all 0.3s ease;
       position: relative;
       padding: 0 1rem;
       line-height: 5rem;
-    }
 
-    a::before {
-      content: '';
-      height: 2rem;
-      width: 2rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    a::after {
-      content: '';
-      height: 2rem;
-      width: 2rem;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      &::before {
+        content: '';
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      &::after {
+        content: '';
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
     }
   }
 
@@ -1036,7 +1036,7 @@ body.dark .about-content .timeline-box .about-text h3,
 body.dark .about-content .about-text h3,
 body.dark .section .container .section-title h2,
 body.dark .home .intro h1,
-body.dark .aside .logo a,
+body.dark .aside .logo span,
 body.dark .aside .nav li a {
   color: $body_dark_heading;
 }

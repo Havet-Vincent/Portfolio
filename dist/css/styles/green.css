@@ -1,8 +1,8 @@
-.aside .logo a::before {
+.aside .logo span::before {
   border-top: 4px solid #2EC1AC;
   border-left: 4px solid #2EC1AC; }
 
-.aside .logo a::after {
+.aside .logo span::after {
   border-bottom: 4px solid #2EC1AC;
   border-right: 4px solid #2EC1AC; }
 
