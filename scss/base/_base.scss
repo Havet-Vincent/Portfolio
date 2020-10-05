@@ -1,0 +1,136 @@
+/* General Style    */
+:root { font-size: 62.5%; }
+
+$about_img: url('../img/about.jpg');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+a { text-decoration: none; }
+
+$transition-time: 0.3s;
+
+.plr { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+.main-content { padding-left: 27rem; }
+
+.section {
+  background-color: darken($body_bg_color, 1%);
+  min-height: 100vh;
+  display: block;
+  padding: 0 3rem;
+  position: fixed;
+  left: 27rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  opacity: 1;
+  @include transition-ease;
+  
+  
+  &.back-section {
+    z-index: 1;
+  }
+
+  .container {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+
+    .section-title {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 6rem;
+      
+      h2 {
+        font-weight: map-get($font-weight, middle);
+        color: $body_light_heading_dark;
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+        text-transform: capitalize;
+        position: relative;
+        margin-top: 1rem;
+    
+        &::before {
+          content: '';
+          height: 0.4rem;
+          width: 5rem;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          margin-top: 1.5rem;
+        }
+    
+        &::after {
+          content: '';
+          height: 0.4rem;
+          width: 2.5rem;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          margin-top: 2.5rem;
+        }
+      }
+    }
+
+  }
+
+   &.active {
+    opacity: 1;
+    z-index: 2;
+    -webkit-animation: slideSection 1s ease;
+    animation: slideSection 1s ease;
+  }
+
+  @-webkit-keyframes slideSection {
+    0%{
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100%{
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes slideSection {
+    0%{
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100%{
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  
+}
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  position: relative;
+}
+
+
+.shadow-dark {
+  -webkit-box-shadow: 0 0 2rem rgba(48,46,77,0.15);
+  box-shadow: 0 0 2rem rgba(48,46,77,0.15);
+}
+
+
+.hidden { display: none!important; }

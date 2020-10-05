@@ -1,17 +1,17 @@
 /* Aside */
+
 .aside {
   width: 27rem;
-  background-color: $body_light_bg_light;
+  background-color: $body_bg_color;
   position: fixed;
   height: 100%;
   left: 0;
   top: 0;
   z-index: 11;
   border-right: 0.1rem solid $body_light_border_light;
-  -webkit-transition: $transition;
-  transition: $transition;
-
-  &__inner {
+  @include transition-ease;
+  
+  .aside-inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,17 +20,15 @@
     padding: 3rem;
     overflow: auto;
   }
-}
-  
 
-  &__logo {
+  .logo {
     padding: 3rem 0;
 
     span {
-      font-size: 4rem;
-      color: $body_light_heading_dark;
+      font-size: map-get($font-size, h2);
+      font-weight: map-get($font-weight, middle);
       font-family: 'Pacifico', cursive; 
-      font-weight: 700;
+      color: $body_light_heading_dark;
       text-decoration: none;
       display: inline-block;
       position: relative;
@@ -67,14 +65,13 @@
     top: 1.8rem;
     z-index: 11;
     border-radius: 0.5rem;
-    background-color: $body_light_bg_light;
+    background-color: $body_bg_color;
     display: none;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: $transition;
-    transition: $transition;
+    @include transition-ease;
 
     
     span {
@@ -129,15 +126,14 @@
       display: block;
 
       a {
-        font-size: 1.6rem;
-        font-weight: 600;
+        font-size: map-get($font-size, p);
+        font-weight: map-get($font-weight, little);
         color: $body_light_heading_dark;
         text-decoration: none;
         line-height: 4rem;
         display: block;
         border-bottom: 0.1rem solid $body_light_border_light;
-        -webkit-transition: $transition;
-        transition: $transition;
+        @include transition-ease;
         text-transform: capitalize;
 
         &:not(.active):hover { padding-left: 0.5rem; }
@@ -150,7 +146,7 @@
   }
 
   .copyright-text {
-    font-size: 1.3rem;
+    font-size: map-get($font-size, copyright);
     color: $grey_color;
   }
-
+}

@@ -1,0 +1,26 @@
+/*   typography Style */
+
+
+/* Font Awesome Free Icon */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Font Google */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-size: map-get($font-size, body);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: map-get($font-weight, small);
+  line-height: 1.5rem;
+}
+
+h1 { font-size: map-get($font-size, h1); }
+h2 { font-size: map-get($font-size, h2); }
+h3 { font-size: map-get($font-size, h3); }
+h4 { font-size: map-get($font-size, h4); }
+p { font-size: map-get($font-size, p); }
+span { font-size: map-get($font-size, span); }
+
+input,textarea { font-family: 'Montserrat', sans-serif; }

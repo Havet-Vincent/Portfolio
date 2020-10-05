@@ -1,0 +1,25 @@
+/*  Mixins */ 
+
+@mixin transition-ease ($time: $transition-time) {
+  -webkit-transition: all $time ease;
+  transition: all $time ease;
+}
+
+@mixin btn {
+  font-size: map-get($font-size, p);
+  font-family: 'Rubik', sans-serif;
+  font-weight: map-get($font-weight, small);
+  padding: 1.2rem 3.5rem;
+  color: $body_dark_heading;
+  border-radius: 4rem;
+  @include transition-ease;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}

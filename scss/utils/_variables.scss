@@ -1,0 +1,39 @@
+/*  Variables */
+
+$web_width: 110rem;
+
+$body_dark__bg_dark: #151515;
+$body-dark_bg_light: #222222;
+$body_dark_heading: #ffffff;
+$body_dark_text: #e9e9e9;
+$body_dark_border: #393939;
+
+$body_bg_color: #fdf9ff;
+$body_light_heading_dark: #302e4d;
+$body_light_heading_light: #ffffff;
+$body_light_text: #504e70;
+$body_light_border_dark: #d4d4e3;
+$body_light_border_light: #e8dfec;
+
+
+$grey_color: #7d7d7d;
+
+$font-size: (
+  body: 1.6rem,
+  copyright: 1.3rem,
+  h1: 4.2rem, 
+  h2: 4rem,
+  h3: 2.4rem,
+  h4: 1.8rem,
+  p: 1.6rem,
+  span: 1.1rem,
+  timeline-date: 1.4rem,
+  lightbox: 3.2rem
+);
+
+$font-weight: (
+  small: 400,
+  little: 600,
+  middle: 700,
+  bold: 900
+);

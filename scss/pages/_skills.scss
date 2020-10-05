@@ -1,0 +1,39 @@
+/* Skills Section */
+
+.skills {
+  .container {
+  
+
+    .skill-item {
+      -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      display: -ms-flexbox;
+      display: flex;
+
+      
+      .skill-item-inner {      
+        background-color: #fdf9ff;
+        border: 0.1rem solid #d4d4e3;
+        border-radius: 1rem;
+        padding: 3rem 1.5rem;
+        text-align: center;
+        @include transition-ease;
+      
+        
+        h4 { 
+          font-weight: map-get($font-weight, middle);
+          margin-bottom: 1rem;
+          text-transform: capitalize;
+        }
+        
+        .icon { 
+          display: inline-block; 
+          flex-wrap: wrap; 
+        
+          img { width: 7rem; height: 7rem; padding: 1rem;}
+        }
+      }
+    }
+  }
+}
