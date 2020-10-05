@@ -219,7 +219,7 @@ $transition: all 0.3s ease;
   left: 0;
   top: 0;
   z-index: 11;
-  border-right: 1rem solid $body_light_border_light;
+  border-right: 0.1rem solid $body_light_border_light;
   -webkit-transition: $transition;
   transition: $transition;
   
