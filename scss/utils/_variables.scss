@@ -1,7 +1,10 @@
 /*  Variables */
 
+/* Viewport  */
 $web_width: 110rem;
 
+
+/*  Colors  */
 $body_dark__bg_dark: #151515;
 $body-dark_bg_light: #222222;
 $body_dark_heading: #ffffff;
@@ -17,6 +20,8 @@ $body_light_border_light: #e8dfec;
 
 
 $grey_color: #7d7d7d;
+
+/* Fonts */ 
 
 $font-size: (
   body: 1.6rem,
@@ -37,3 +42,19 @@ $font-weight: (
   middle: 700,
   bold: 900
 );
+
+$rubik: 'Rubik', sans-serif;
+$pacifico :'Pacifico', cursive;
+
+$font-family: (
+  rubik: $rubik,
+  pacifico: $pacifico,
+);
+
+
+
+/* Responsive */
+$mobile-width: 599px;
+$tablet-width: 767px;
+$ipad-width: 991px;
+$laptop-width: 1199px;

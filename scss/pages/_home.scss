@@ -15,12 +15,19 @@
       border-radius: 50%;
       display: inline-block;
       border: 0.7rem solid $body_light_border_dark;
+
+      @include mobile-only { 
+        height: 15rem;
+        width: 15rem; 
+      }
     }
 
     h1 {
       font-weight: map-get($font-weight, middle);
       margin: 2rem 0 0.5rem;
       @include transition-ease;
+
+      @include mobile-only { font-size: 3.4rem; line-height: 3rem; }
     }
 
     p {
@@ -44,6 +51,8 @@
         margin: 0 0.4rem;
         border-radius: 50%;
         text-decoration: none;
+
+        @include mobile-only { margin: 0.2rem 0.4rem; }
   
         &:hover {
           @include transition-ease;

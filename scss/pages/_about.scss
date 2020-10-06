@@ -16,6 +16,7 @@
         font-weight: map-get($font-weight, middle);
         margin-bottom: 1.5rem;
         color: $body_light_heading_dark;
+        @include laptop-only { line-height: 2.5rem; }      
       }
   
       p {
@@ -34,6 +35,13 @@
       max-width: 100%;
       margin-top: 4rem;
 
+      @include tablet-only {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 1rem;
+      }
+
       .info-item {
         -ms-flex: 0 50%;
         flex: 0 50%;
@@ -46,11 +54,15 @@
           color: $body_light_heading_dark;
           border-bottom: 1px solid $body_light_border_light;
 
+          @include mobile-only { font-size: 1.4rem; line-height: 2rem; }
+
           span {
             font-weight: map-get($font-weight, small);
             color: $body_light_text;
             margin-left: 0.4rem;
             display: inline-block;
+
+            @include laptop-only { display: block; margin-left: 0; }
           }
         }
       }
@@ -59,6 +71,8 @@
         margin-top: 2rem;
         width: 100%;
         text-align: center;
+
+        @include tablet-only { margin-bottom: 1rem; }
 
         .btn {
           margin-right: 1.5rem;
@@ -75,6 +89,13 @@
       max-width: 50%;
       margin-top: 3rem;
 
+      @include tablet-only {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 1rem;
+      }
+
       h3.title {
         font-weight: map-get($font-weight, middle);
         margin-bottom: 3rem;
@@ -85,6 +106,8 @@
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+
+        @include tablet-only { margin-bottom: 1rem; }
         
         .timeline {
           background-color: $body_bg_color;
@@ -133,6 +156,8 @@
               margin-bottom: 1.5rem;
               text-transform: capitalize;
               color: $body_light_heading_dark;
+
+              @include ipad-only { line-height: 2rem; }
             }
 
             .timeline-text {

@@ -34,6 +34,10 @@ $transition-time: 0.3s;
   overflow-y: auto;
   opacity: 1;
   @include transition-ease;
+
+  @include laptop-only { left: 0; } 
+
+  &.open { @include laptop-only { left: 27rem; } }
   
   
   &.back-section {
@@ -44,6 +48,8 @@ $transition-time: 0.3s;
     padding-top: 6rem;
     padding-bottom: 7rem;
 
+    @include laptop-only { padding-top: 7rem; } 
+
     .section-title {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
@@ -51,13 +57,15 @@ $transition-time: 0.3s;
       margin-bottom: 6rem;
       
       h2 {
+        font-family: map-get($font-family, rubik);
         font-weight: map-get($font-weight, middle);
         color: $body_light_heading_dark;
-        font-family: 'Rubik', sans-serif;
         margin: 0;
         text-transform: capitalize;
         position: relative;
         margin-top: 1rem;
+
+        @include mobile-only { font-size: 3.4rem; line-height: 3rem; }
     
         &::before {
           content: '';

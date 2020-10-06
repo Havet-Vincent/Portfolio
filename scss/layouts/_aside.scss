@@ -10,6 +10,12 @@
   z-index: 11;
   border-right: 0.1rem solid $body_light_border_light;
   @include transition-ease;
+
+  @include laptop-only { left: -27rem; }
+
+  &.open {
+    @include laptop-only { left: 0; }
+  }
   
   .aside-inner {
     position: absolute;
@@ -25,9 +31,9 @@
     padding: 3rem 0;
 
     span {
-      font-size: map-get($font-size, h2);
+      font-family: map-get($font-family, pacifico); 
       font-weight: map-get($font-weight, middle);
-      font-family: 'Pacifico', cursive; 
+      font-size: map-get($font-size, h2);
       color: $body_light_heading_dark;
       text-decoration: none;
       display: inline-block;
@@ -73,6 +79,15 @@
     justify-content: center;
     @include transition-ease;
 
+    @include laptop-only { 
+      display: -ms-flexbox;
+      display: flex;
+      left: 3rem;
+     }
+
+    &.open {
+      @include laptop-only { left: 27.5rem; }
+    }
     
     span {
       height: 0.2rem;

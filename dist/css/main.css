@@ -1,4 +1,8 @@
 /*  Variables */
+/* Viewport  */
+/*  Colors  */
+/* Fonts */
+/* Responsive */
 /*  Mixins */
 /* General Style    */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -41,24 +45,37 @@ a {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  @media screen and (max-width: 1199px) {
+    .section {
+      left: 0; } }
+  @media screen and (max-width: 1199px) {
+    .section.open {
+      left: 27rem; } }
   .section.back-section {
     z-index: 1; }
   .section .container {
     padding-top: 6rem;
     padding-bottom: 7rem; }
+    @media screen and (max-width: 1199px) {
+      .section .container {
+        padding-top: 7rem; } }
     .section .container .section-title {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%;
       margin-bottom: 6rem; }
       .section .container .section-title h2 {
+        font-family: "Rubik", sans-serif;
         font-weight: 700;
         color: #302e4d;
-        font-family: 'Rubik', sans-serif;
         margin: 0;
         text-transform: capitalize;
         position: relative;
         margin-top: 1rem; }
+        @media screen and (max-width: 599px) {
+          .section .container .section-title h2 {
+            font-size: 3.4rem;
+            line-height: 3rem; } }
         .section .container .section-title h2::before {
           content: '';
           height: 0.4rem;
@@ -145,9 +162,9 @@ input, textarea {
 
 /*  Buttons Style */
 .btn {
-  font-size: 1.6rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
+  font-size: 1.6rem;
   padding: 1.2rem 3.5rem;
   color: #ffffff;
   border-radius: 4rem;
@@ -178,6 +195,12 @@ input, textarea {
   border-right: 0.1rem solid #e8dfec;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  @media screen and (max-width: 1199px) {
+    .aside {
+      left: -27rem; } }
+  @media screen and (max-width: 1199px) {
+    .aside.open {
+      left: 0; } }
   .aside .aside-inner {
     position: absolute;
     top: 0;
@@ -189,9 +212,9 @@ input, textarea {
   .aside .logo {
     padding: 3rem 0; }
     .aside .logo span {
-      font-size: 4rem;
+      font-family: "Pacifico", cursive;
       font-weight: 700;
-      font-family: 'Pacifico', cursive;
+      font-size: 4rem;
       color: #302e4d;
       text-decoration: none;
       display: inline-block;
@@ -230,6 +253,14 @@ input, textarea {
     justify-content: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+    @media screen and (max-width: 1199px) {
+      .aside .nav-toggler {
+        display: -ms-flexbox;
+        display: flex;
+        left: 3rem; } }
+    @media screen and (max-width: 1199px) {
+      .aside .nav-toggler.open {
+        left: 27.5rem; } }
     .aside .nav-toggler span {
       height: 0.2rem;
       width: 1.8rem;
@@ -299,11 +330,19 @@ input, textarea {
       border-radius: 50%;
       display: inline-block;
       border: 0.7rem solid #d4d4e3; }
+      @media screen and (max-width: 599px) {
+        .home .intro img {
+          height: 15rem;
+          width: 15rem; } }
     .home .intro h1 {
       font-weight: 700;
       margin: 2rem 0 0.5rem;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
+      @media screen and (max-width: 599px) {
+        .home .intro h1 {
+          font-size: 3.4rem;
+          line-height: 3rem; } }
     .home .intro p {
       font-weight: 600;
       color: #504e70;
@@ -321,6 +360,9 @@ input, textarea {
         margin: 0 0.4rem;
         border-radius: 50%;
         text-decoration: none; }
+        @media screen and (max-width: 599px) {
+          .home .intro .social-links a {
+            margin: 0.2rem 0.4rem; } }
         .home .intro .social-links a:hover {
           -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
@@ -341,6 +383,9 @@ input, textarea {
       font-weight: 700;
       margin-bottom: 1.5rem;
       color: #302e4d; }
+      @media screen and (max-width: 1199px) {
+        .about .about-content .about-text h3 {
+          line-height: 2.5rem; } }
     .about .about-content .about-text p {
       font-size: 1.6rem;
       -webkit-transition: all 0.3s ease;
@@ -355,6 +400,12 @@ input, textarea {
     flex: 0 100%;
     max-width: 100%;
     margin-top: 4rem; }
+    @media screen and (max-width: 767px) {
+      .about .about-content .personal-info {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 1rem; } }
     .about .about-content .personal-info .info-item {
       -ms-flex: 0 50%;
       flex: 0 50%;
@@ -365,15 +416,26 @@ input, textarea {
         padding: 1rem 0;
         color: #302e4d;
         border-bottom: 1px solid #e8dfec; }
+        @media screen and (max-width: 599px) {
+          .about .about-content .personal-info .info-item p {
+            font-size: 1.4rem;
+            line-height: 2rem; } }
         .about .about-content .personal-info .info-item p span {
           font-weight: 400;
           color: #504e70;
           margin-left: 0.4rem;
           display: inline-block; }
+          @media screen and (max-width: 1199px) {
+            .about .about-content .personal-info .info-item p span {
+              display: block;
+              margin-left: 0; } }
     .about .about-content .personal-info .buttons {
       margin-top: 2rem;
       width: 100%;
       text-align: center; }
+      @media screen and (max-width: 767px) {
+        .about .about-content .personal-info .buttons {
+          margin-bottom: 1rem; } }
       .about .about-content .personal-info .buttons .btn {
         margin-right: 1.5rem;
         margin-top: 1rem; }
@@ -382,6 +444,12 @@ input, textarea {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 3rem; }
+    @media screen and (max-width: 767px) {
+      .about .about-content .education, .about .about-content .experience {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 1rem; } }
     .about .about-content .education h3.title, .about .about-content .experience h3.title {
       font-weight: 700;
       margin-bottom: 3rem;
@@ -390,6 +458,9 @@ input, textarea {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%; }
+      @media screen and (max-width: 767px) {
+        .about .about-content .education .timeline-box, .about .about-content .experience .timeline-box {
+          margin-bottom: 1rem; } }
       .about .about-content .education .timeline-box .timeline, .about .about-content .experience .timeline-box .timeline {
         background-color: #fdf9ff;
         padding: 3rem 1.5rem;
@@ -429,6 +500,9 @@ input, textarea {
             margin-bottom: 1.5rem;
             text-transform: capitalize;
             color: #302e4d; }
+            @media screen and (max-width: 991px) {
+              .about .about-content .education .timeline-box .timeline .timeline-item .timeline-title, .about .about-content .experience .timeline-box .timeline .timeline-item .timeline-title {
+                line-height: 2rem; } }
           .about .about-content .education .timeline-box .timeline .timeline-item .timeline-text, .about .about-content .experience .timeline-box .timeline .timeline-item .timeline-text {
             font-size: 1.6rem;
             line-height: 2.5rem;
@@ -442,6 +516,12 @@ input, textarea {
   max-width: 33.33%;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 767px) {
+    .skills .container .skill-item {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 1rem; } }
   .skills .container .skill-item .skill-item-inner {
     background-color: #fdf9ff;
     border: 0.1rem solid #d4d4e3;
@@ -486,12 +566,25 @@ input, textarea {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-right: 1rem; }
+    @media screen and (max-width: 767px) {
+      .portfolio .portfolio-filter button {
+        margin-bottom: 1rem; } }
 
 .portfolio .portfolio-item {
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
   max-width: 33.33%;
   margin-bottom: 3rem; }
+  @media screen and (max-width: 991px) {
+    .portfolio .portfolio-item {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 599px) {
+    .portfolio .portfolio-item {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; } }
   .portfolio .portfolio-item.hide {
     display: none; }
   .portfolio .portfolio-item.show {
@@ -699,6 +792,11 @@ input, textarea {
   max-width: 33.33%;
   text-align: center;
   margin-bottom: 4rem; }
+  @media screen and (max-width: 599px) {
+    .contact .contact-info-item {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; } }
   .contact .contact-info-item .icon {
     display: inline-block; }
     .contact .contact-info-item .icon .fa {
@@ -722,6 +820,12 @@ input, textarea {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; }
+    @media screen and (max-width: 767px) {
+      .contact .contact-form .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 1rem; } }
   .contact .contact-form .col-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -750,8 +854,16 @@ input, textarea {
     .contact .contact-form .form-item input:focus:invalid, .contact .contact-form .form-item textarea:focus:invalid {
       outline: none; }
   .contact .contact-form .btn {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     height: 5rem;
-    padding: 0 5rem; }
+    padding: 0 5rem;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (max-width: 599px) {
+      .contact .contact-form .btn {
+        height: 4rem;
+        font-size: 1.28rem; } }
 
 /* Dark Body */
 body.dark .section {
@@ -804,67 +916,3 @@ body.dark .home .intro p {
 body.dark .shadow-dark {
   -webkit-box-shadow: none;
   box-shadow: none; }
-
-/* Responsive */
-@media (max-width: 1199px) {
-  .section {
-    left: 0; }
-    .section.open {
-      left: 27rem; }
-    .section .container {
-      padding-top: 7rem; }
-  .aside {
-    left: -27rem; }
-    .aside.open {
-      left: 0; }
-    .aside .nav-toggler {
-      display: -ms-flexbox;
-      display: flex;
-      left: 3rem; }
-      .aside .nav-toggler.open {
-        left: 27.5rem; }
-  .about .about-content .personal-info .info-inner p span {
-    display: block;
-    margin-left: 0; } }
-
-@media (max-width: 991px) {
-  .portfolio .portfolio-item,
-  .service .service-item {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%; }
-  .about .about-content .timeline-box .timeline .timeline-item .timeline-title {
-    line-height: 2rem; }
-  .about .about-content .about-text h3 {
-    line-height: 2.5rem; } }
-
-@media (max-width: 767px) {
-  .contact .contact-form .col-6,
-  .skills .container .skill-item,
-  .about .about-content .experience,
-  .about .about-content .education,
-  .about .about-content .personal-info {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 1rem; }
-  .portfolio .portfolio-filter button {
-    margin-bottom: 10px; }
-  .about .about-content .education .timeline-box, .about .about-content .experience .timeline-box,
-  .about .about-content .personal-info .buttons {
-    margin-bottom: 1rem; } }
-
-@media (max-width: 575px) {
-  .contact .contact-info-item,
-  .portfolio .portfolio-item {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%; }
-  .about .about-content .personal-info .info-item p {
-    font-size: 1.4rem;
-    line-height: 2rem; }
-  .home .intro h1, .section .container .section-title h2 {
-    font-size: 3.4rem;
-    line-height: 3rem; }
-  .home .intro .social-links a {
-    margin: 0.2rem 0.4rem; } }

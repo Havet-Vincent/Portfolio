@@ -6,9 +6,9 @@
 }
 
 @mixin btn {
-  font-size: map-get($font-size, p);
-  font-family: 'Rubik', sans-serif;
+  font-family: map-get($font-family, rubik);
   font-weight: map-get($font-weight, small);
+  font-size: map-get($font-size, p);
   padding: 1.2rem 3.5rem;
   color: $body_dark_heading;
   border-radius: 4rem;
@@ -22,4 +22,33 @@
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin ipad-only {
+  @media screen and (max-width: $ipad-width) {
+    @content;
+  }
+}
+
+@mixin laptop-only {
+  @media screen and (max-width: $laptop-width) {
+    @content;
+  }
+}
+
+
+@mixin rubik {
+  font-family: map-get($font-family, rubik);
 }
