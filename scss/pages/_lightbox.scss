@@ -1,0 +1,136 @@
+/* lightbox */
+
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 100;
+  display: none;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: zoom-out;
+  padding: 3rem;
+
+
+  &.open { 
+    @include flex; 
+
+    .lightbox-content {
+      animation: lightboxImage .5s ease;
+    }
+    
+    @-webkit-keyframes lightboxImage {
+      0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+      }
+      100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+    @keyframes lightboxImage {
+      0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+      }
+      100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  }
+  
+  .lightbox-content {
+    position: relative;
+    background-color: transparent;
+    @include transition-ease;
+    opacity: 1;
+    z-index: 1;
+    
+    img {
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 50rem;
+      cursor: pointer;
+      display: block;
+      padding: 4rem 0 3rem;
+      
+    }
+    
+    .lightbox-close {
+      position: absolute;
+      height: 4rem;
+      width: 4rem;
+      top: -0.5rem;
+      right: 0;
+      font-size: map-get($font-size, lightbox);
+      text-align: center;
+      line-height: 4rem;
+      cursor: pointer;
+      background-color: $body_light_heading_light;
+      border-radius: 50%;
+      
+    }
+    
+    .lightbox-caption {
+      @include flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      -ms-flex-pack: space-between;
+      justify-content: space-between;
+      font-size: map-get($font-size, p);
+      font-weight: map-get($font-weight, small);
+      color: $body_light_heading_light;
+      z-index: -1;  
+    }
+    .caption-content { 
+      color: $body_light_heading_light;
+      position: absolute;
+      z-index: -2;
+      margin-top: 1rem;
+    }  
+    
+  }
+  .lightbox-controls {  
+    
+    .prev-item { left: 3rem; }
+    
+    .next-item { right: 3rem; } 
+
+    .prev-item, 
+    .next-item {
+      position: absolute;
+      height: 4rem;
+      width: 4rem;
+      background-color: $body_light_heading_light;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer;
+      top: 50%;
+      margin-top: -2rem;
+      z-index: 110;
+      @include transition-ease;
+    
+      &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    
+      &:active {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      .fa { font-size: map-get($font-size, lightbox); line-height: 4rem; }
+    }
+  } 
+}

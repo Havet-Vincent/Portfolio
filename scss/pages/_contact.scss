@@ -1,0 +1,101 @@
+/*  Contact Section */
+
+.contact {
+
+
+  .contact-info-item {
+    @include flex33;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @include mobile-only {
+      @include flex100;
+    }
+
+    .icon {
+      display: inline-block;
+
+      .fa {
+        font-size: map-get($font-size, h2);
+      }
+    }
+
+    h4 {
+      font-weight: map-get($font-weight, middle);
+      color: $body_light_heading_dark;
+      text-transform: capitalize;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      font-weight: map-get($font-weight, small);
+      line-height: 2.5rem;
+      color: $body_light_text;
+      margin: 0;
+    }
+  }
+
+  .contact-form {
+    @include flex100;
+
+    .col-6 {
+      @include flex50;
+
+      @include tablet-only {
+        @include flex100;
+        margin-top: 1rem;
+      }
+    }
+
+    .col-12 {
+      @include flex100;
+    }
+
+    .form-item {
+      margin-bottom: 3rem;
+
+      .form-control {
+        width: 100%;
+        height: 5rem;
+        border-radius: 2rem;
+        border: 0.1rem solid $body_light_border_dark;
+        padding: 1rem 2.5rem;
+        font-size: map-get($font-size, p);
+        color: $body_light_text;
+        @include transition-ease;
+
+        &:focus {
+          -webkit-box-shadow: 0 0 2rem rgba(48,46,77,0.15);
+          box-shadow: 0 0 2rem rgba;
+        }
+      }
+
+      textarea.form-control {
+        height: 14rem;
+      }
+
+      /* invalid fields:  input and textarea */
+      input:invalid, textarea:invalid{
+        border-color: #900;
+        background-color: #FDD;
+      }
+      
+      input:focus:invalid, textarea:focus:invalid  {
+        outline: none;
+      }
+    }
+    
+    .btn {
+      @include flex100;
+      height: 5rem;
+      padding: 0 5rem;
+      display: block;
+      margin: 0 auto;
+
+      @include mobile-only { 
+        height: 4rem; 
+        font-size: map-get($font-size, p) * 0.8;
+      }
+    }
+  }
+}

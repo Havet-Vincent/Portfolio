@@ -1,0 +1,65 @@
+/* home section */
+
+.home {
+  @include flex;
+  min-height: 100vh;
+
+  .intro {
+    @include transition-ease;
+    text-align: center;
+
+    img {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      display: inline-block;
+      border: 0.7rem solid $body_light_border_dark;
+
+      @include mobile-only { 
+        height: 15rem;
+        width: 15rem; 
+      }
+    }
+
+    h1 {
+      font-weight: map-get($font-weight, middle);
+      margin: 2rem 0 0.5rem;
+      @include transition-ease;
+
+      @include mobile-only { font-size: 3.4rem; line-height: 3rem; }
+    }
+
+    p {
+      font-weight: map-get($font-weight, little);
+      color: $body_light_text;
+      margin-top: 2rem;
+      line-height: 2.2rem;
+    }
+
+    .social-links { 
+      margin-top: 
+      2.5rem; 
+
+      a {
+        height: 3.5rem;
+        width: 3.5rem;
+        display: inline-block;
+        color: $body_light_border_dark;
+        text-align: center;
+        line-height: 3.5rem;
+        margin: 0 0.4rem;
+        border-radius: 50%;
+        text-decoration: none;
+
+        @include mobile-only { margin: 0.2rem 0.4rem; }
+  
+        &:hover {
+          @include transition-ease;
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,60 @@
+/* Dark Body */
+
+body.dark .section {
+  background-color: $body_dark__bg_dark;
+}
+
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .skills .skill-item .skill-item-inner,
+body.dark .about .about-content .timeline-box .timeline,
+body.dark .aside {
+  background-color: $body-dark_bg_light;
+}
+
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .contact .contact-info-item h4,
+body.dark .portfolio .portfolio-filter button,
+body.dark .skills .skill-item .skill-item-inner h4,
+body.dark .about .about-content .timeline .timeline-title,
+body.dark .about .about-content h3.title,
+body.dark .about .about-content .skills .skill-item h5,
+body.dark .about .about-content .personal-info .info-item p,
+body.dark .about-content  .timeline-box .timeline .timeline-item h4,
+body.dark .about .about-content .timeline-box .timeline .timeline-item .timeline-title,
+body.dark .about-content .timeline-box .about-text h3,
+body.dark .about-content .about-text h3,
+body.dark .section .container .section-title h2,
+body.dark .home .intro h1,
+body.dark .aside .logo span,
+body.dark .aside .nav li a {
+  color: $body_dark_heading;
+}
+
+body.dark .aside,
+
+body.dark .portfolio .portfolio-item-inner,
+body.dark .skills .skill-item .skill-item-inner,
+body.dark .about .about-content .timeline-box .timeline,
+body.dark .about .about-content .personal-info .info-item p,
+body.dark .aside .nav li a { 
+  border-color: $body_dark_border;
+}
+
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .contact .contact-info-item p,
+body.dark .skills .skill-item .skill-item-inner .icon.titre,
+body.dark .about .about-content .timeline .timeline-text,
+body.dark .about .about-content .timeline .timeline-date .fa,
+body.dark .about .about-content .skills .skill-item .progress .skill-percent,
+body.dark .about-content .about-text p,
+body.dark .about .about-content .timeline-box .timeline .timeline-item .timeline-text,
+body.dark .aside .aside-inner copyright-text,
+body.dark .home .intro p {
+  color: $body_dark_text;
+}
+
+
+body.dark .shadow-dark {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
