@@ -51,9 +51,7 @@ $transition-time: 0.3s;
     @include laptop-only { padding-top: 7rem; } 
 
     .section-title {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
+      @include flex100;
       margin-bottom: 6rem;
       
       h2 {
@@ -125,8 +123,7 @@ $transition-time: 0.3s;
 
 
 .row {
-  display: -ms-flexbox;
-  display: flex;
+  @include flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -1.5rem;

@@ -80,8 +80,7 @@
     @include transition-ease;
 
     @include laptop-only { 
-      display: -ms-flexbox;
-      display: flex;
+      @include flex;
       left: 3rem;
      }
 

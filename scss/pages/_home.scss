@@ -1,9 +1,8 @@
 /* home section */
 
 .home {
+  @include flex;
   min-height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
 
   .intro {
     @include transition-ease;

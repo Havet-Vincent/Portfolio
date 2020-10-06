@@ -2,14 +2,10 @@
 
 .about {
   .about-content {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+    @include flex100;
 
     .about-text {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
+      @include flex100;
 
       h3 {
         font-size: map-get($font-size, h3);
@@ -30,29 +26,23 @@
     }
 
     .personal-info {
-      -ms-flex: 0 100%;
-      flex: 0 100%;
-      max-width: 100%;
+      @include flex100;
       margin-top: 4rem;
 
       @include tablet-only {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
+        @include flex100;
         margin-top: 1rem;
       }
 
       .info-item {
-        -ms-flex: 0 50%;
-        flex: 0 50%;
-        max-width: 50%;
+        @include flex50;
 
         p {
           font-weight: 600;
           margin: 0;
           padding: 1rem 0;
           color: $body_light_heading_dark;
-          border-bottom: 1px solid $body_light_border_light;
+          border-bottom: 0.1rem solid $body_light_border_light;
 
           @include mobile-only { font-size: 1.4rem; line-height: 2rem; }
 
@@ -84,15 +74,11 @@
 
 
     .education, .experience {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
+      @include flex50;
       margin-top: 3rem;
 
       @include tablet-only {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
+        @include flex100;
         margin-top: 1rem;
       }
 
@@ -103,9 +89,7 @@
       }
 
       .timeline-box {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
+        @include flex100;
 
         @include tablet-only { margin-bottom: 1rem; }
         

@@ -135,7 +135,7 @@ a {
 /* Font Google */
 body {
   font-size: 1.6rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.5rem; }
 
@@ -158,7 +158,7 @@ span {
   font-size: 1.1rem; }
 
 input, textarea {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 /*  Buttons Style */
 .btn {
@@ -317,9 +317,9 @@ input, textarea {
 
 /* home section */
 .home {
-  min-height: 100vh;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  min-height: 100vh; }
   .home .intro {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -396,8 +396,8 @@ input, textarea {
     .about .about-content .about-text span {
       font-size: 2.4rem; }
   .about .about-content .personal-info {
-    -ms-flex: 0 100%;
-    flex: 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
     margin-top: 4rem; }
     @media screen and (max-width: 767px) {
@@ -407,15 +407,15 @@ input, textarea {
         max-width: 100%;
         margin-top: 1rem; } }
     .about .about-content .personal-info .info-item {
-      -ms-flex: 0 50%;
-      flex: 0 50%;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
       max-width: 50%; }
       .about .about-content .personal-info .info-item p {
         font-weight: 600;
         margin: 0;
         padding: 1rem 0;
         color: #302e4d;
-        border-bottom: 1px solid #e8dfec; }
+        border-bottom: 0.1rem solid #e8dfec; }
         @media screen and (max-width: 599px) {
           .about .about-content .personal-info .info-item p {
             font-size: 1.4rem;
@@ -536,6 +536,7 @@ input, textarea {
       text-transform: capitalize; }
     .skills .container .skill-item .skill-item-inner .icon {
       display: inline-block;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .skills .container .skill-item .skill-item-inner .icon img {
         width: 7rem;
@@ -737,12 +738,12 @@ input, textarea {
       background-color: #ffffff;
       border-radius: 50%; }
     .lightbox .lightbox-content .lightbox-caption {
+      display: -ms-flexbox;
+      display: flex;
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      display: -ms-flexbox;
-      display: flex;
       -ms-flex-pack: space-between;
       justify-content: space-between;
       font-size: 1.6rem;
@@ -856,6 +857,7 @@ input, textarea {
   .contact .contact-form .btn {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
+    max-width: 100%;
     height: 5rem;
     padding: 0 5rem;
     display: block;

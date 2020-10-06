@@ -18,8 +18,7 @@
 
 
   &.open { 
-    display: -ms-flexbox; 
-    display: flex; 
+    @include flex; 
 
     .lightbox-content {
       animation: lightboxImage .5s ease;
@@ -81,12 +80,11 @@
     }
     
     .lightbox-caption {
+      @include flex;
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      display: -ms-flexbox;
-      display: flex;
       -ms-flex-pack: space-between;
       justify-content: space-between;
       font-size: map-get($font-size, p);

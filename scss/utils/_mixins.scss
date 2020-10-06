@@ -52,3 +52,27 @@
 @mixin rubik {
   font-family: map-get($font-family, rubik);
 }
+
+
+@mixin flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex100 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; 
+}
+
+@mixin flex50 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; 
+}
+
+@mixin flex33 {
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%; 
+}

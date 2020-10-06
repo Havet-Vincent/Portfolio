@@ -4,9 +4,7 @@
   .container { padding-bottom: 4rem; }
     
     .portfolio-filter {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
+      @include flex100;
       text-align: center;
       margin-bottom: 4rem;
       
@@ -29,20 +27,14 @@
     }
     
     .portfolio-item {
-      -ms-flex: 0 0 33.33%;
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
+      @include flex33;
       margin-bottom: 3rem;
 
       @include ipad-only {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
+        @include flex50;
       }
       @include mobile-only {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
+        @include flex100;
       }
 
 

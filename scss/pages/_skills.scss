@@ -4,16 +4,11 @@
   .container {
     
     .skill-item {
-      -ms-flex: 0 0 33.33%;
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
-      display: -ms-flexbox;
-      display: flex;
+      @include flex33;
+      @include flex;
 
       @include tablet-only {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
+        @include flex100;
         margin-top: 1rem;
       }
 
@@ -35,6 +30,7 @@
         
         .icon { 
           display: inline-block; 
+          -ms-flex-wrap: wrap;
           flex-wrap: wrap; 
         
           img { width: 7rem; height: 7rem; padding: 1rem;}

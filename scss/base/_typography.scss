@@ -11,7 +11,7 @@
 
 body {
   font-size: map-get($font-size, body);
-  font-family: 'Montserrat', sans-serif;
+  font-family: map-get($font-family, montserrat);
   font-weight: map-get($font-weight, small);
   line-height: 1.5rem;
 }
@@ -23,6 +23,6 @@ h4 { font-size: map-get($font-size, h4); }
 p { font-size: map-get($font-size, p); }
 span { font-size: map-get($font-size, span); }
 
-input,textarea { font-family: 'Montserrat', sans-serif; }
+input,textarea { font-family: map-get($font-family, montserrat); }
 
 
