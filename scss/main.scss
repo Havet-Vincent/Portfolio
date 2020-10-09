@@ -1,7 +1,22 @@
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body { background-color: #fff; }
+
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/preloader";
+@import "./components/buttons";
+@import "./components/styleSwitcher";
+@import "./layouts/container";
+@import "./layouts/aside";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/skills";
+@import "./pages/portfolio";
+@import "./pages/lightbox";
+@import "./pages/contact";
+@import "./themes/dark";
+
+
+

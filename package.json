@@ -6,7 +6,7 @@
   "repository": "git@github.com:Havet-Vincent/Portfolio.git",
   "author": "HAVET <vhavet@gmail.com>",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css -r --output-style=compressed"
+    "sass": "node-sass -w scss/ -o dist/css -r"
   },
   "license": "MIT",
   "private": false,

@@ -1,0 +1,85 @@
+/*  Mixins */ 
+
+@mixin transition-ease ($time: $transition-time) {
+  -webkit-transition: all $time ease;
+  transition: all $time ease;
+}
+
+@mixin transition-loader ($time: $transition-loader) {
+  -webkit-transition: all $time ease;
+  transition: all $time ease;
+}
+
+
+
+@mixin btn {
+  font-family: map-get($font-family, rubik);
+  font-weight: map-get($font-weight, small);
+  font-size: map-get($font-size, p);
+  padding: 1.2rem 3.5rem;
+  color: $body_dark_heading;
+  border-radius: 4rem;
+  @include transition-ease;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin ipad-only {
+  @media screen and (max-width: $ipad-width) {
+    @content;
+  }
+}
+
+@mixin laptop-only {
+  @media screen and (max-width: $laptop-width) {
+    @content;
+  }
+}
+
+
+@mixin rubik {
+  font-family: map-get($font-family, rubik);
+}
+
+
+@mixin flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex100 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; 
+}
+
+@mixin flex50 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; 
+}
+
+@mixin flex33 {
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%; 
+}
