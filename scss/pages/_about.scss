@@ -39,8 +39,10 @@
 
         p {
           font-weight: 600;
+          
           margin: 0;
           padding: 1rem 0;
+          line-height: 2rem;
           color: $body_light_heading_dark;
           border-bottom: 0.1rem solid $body_light_border_light;
 
@@ -48,11 +50,14 @@
 
           span {
             font-weight: map-get($font-weight, small);
+            font-size: map-get($font-size, span) * 1.36;
             color: $body_light_text;
             margin-left: 0.4rem;
             display: inline-block;
 
             @include laptop-only { display: block; margin-left: 0; }
+            @include tablet-only { font-size: map-get($font-size, span) * 1.28; }
+            @include mobile-only { font-size: map-get($font-size, span) * 1.09; }
           }
         }
       }
