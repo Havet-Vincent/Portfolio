@@ -16,10 +16,13 @@ window.addEventListener("DOMContentLoaded", function() {
     form.reset();
     button.style = "display: none ";
     status.innerHTML = "Merci de votre message !";
+    status.style.color = "green";
   }
 
   function error() {
     status.innerHTML = "Oops! Il y a un problème.";
+    status.style.color = "red";
+    
   }
 
   // handle the form submission event

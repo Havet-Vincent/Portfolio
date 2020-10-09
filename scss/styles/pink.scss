@@ -21,7 +21,7 @@ $pink_color: #EC0101;
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
 .aside .nav li a.active {
-  color: $pink_color;
+  color: $pink_color !important
 }
 
 .about .about-content .timeline .circle-dot,

@@ -978,6 +978,7 @@ body.dark .about .about-content .timeline-box .timeline,
 body.dark .aside {
   background-color: #222222; }
 
+body.dark .contact .contact-form .col-12 .my-form-status p,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .contact .contact-info-item h4,
 body.dark .portfolio .portfolio-filter button,
@@ -985,6 +986,7 @@ body.dark .skills .skill-item .skill-item-inner h4,
 body.dark .about .about-content .timeline .timeline-title,
 body.dark .about .about-content h3.title,
 body.dark .about .about-content .skills .skill-item h5,
+body.dark .about .about-content .personal-info .info-item p span,
 body.dark .about .about-content .personal-info .info-item p,
 body.dark .about-content .timeline-box .timeline .timeline-item h4,
 body.dark .about .about-content .timeline-box .timeline .timeline-item .timeline-title,
@@ -996,11 +998,11 @@ body.dark .aside .logo span,
 body.dark .aside .nav li a {
   color: #ffffff; }
 
-body.dark .aside,
 body.dark .portfolio .portfolio-item-inner,
 body.dark .skills .skill-item .skill-item-inner,
 body.dark .about .about-content .timeline-box .timeline,
 body.dark .about .about-content .personal-info .info-item p,
+body.dark .aside,
 body.dark .aside .nav li a {
   border-color: #393939; }
 
