@@ -515,6 +515,7 @@ input, textarea {
         font-weight: 600;
         margin: 0;
         padding: 1rem 0;
+        line-height: 2rem;
         color: #302e4d;
         border-bottom: 0.1rem solid #e8dfec; }
         @media screen and (max-width: 599px) {
@@ -523,6 +524,7 @@ input, textarea {
             line-height: 2rem; } }
         .about .about-content .personal-info .info-item p span {
           font-weight: 400;
+          font-size: 1.496rem;
           color: #504e70;
           margin-left: 0.4rem;
           display: inline-block; }
@@ -530,6 +532,12 @@ input, textarea {
             .about .about-content .personal-info .info-item p span {
               display: block;
               margin-left: 0; } }
+          @media screen and (max-width: 767px) {
+            .about .about-content .personal-info .info-item p span {
+              font-size: 1.408rem; } }
+          @media screen and (max-width: 599px) {
+            .about .about-content .personal-info .info-item p span {
+              font-size: 1.199rem; } }
     .about .about-content .personal-info .buttons {
       margin-top: 2rem;
       width: 100%;
