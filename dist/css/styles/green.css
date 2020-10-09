@@ -16,7 +16,7 @@
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
 .aside .nav li a.active {
-  color: #2EC1AC; }
+  color: #2EC1AC !important; }
 
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline .timeline-item::before,
