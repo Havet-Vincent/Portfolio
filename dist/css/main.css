@@ -637,6 +637,7 @@ input, textarea {
     border-radius: 1rem;
     padding: 3rem 1.5rem;
     text-align: center;
+    width: 100%;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     .skills .container .skill-item .skill-item-inner h4 {
